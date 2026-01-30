@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
@@ -182,7 +182,7 @@ export default function Home() {
   );
 }
 
-const styles: Record<string, React.CSSProperties> = {
+const styles: Record<string, CSSProperties> = {
   main: {
     minHeight: "100vh",
     display: "flex",
